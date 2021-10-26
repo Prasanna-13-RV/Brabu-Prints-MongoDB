@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Prasanna-RV/Brabu_Prints.git"
+    "url": "git+https://github.com/Prasanna-13-RV/Brabu-Prints-MongoDB.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Prasanna-RV/Brabu_Prints/issues"
+    "url": "https://github.com/Prasanna-13-RV/Brabu-Prints-MongoDB/issues"
   },
-  "homepage": "https://github.com/Prasanna-RV/Brabu_Prints#readme",
+  "homepage": "https://github.com/Prasanna-13-RV/Brabu-Prints-MongoDB#readme",
   "dependencies": {
     "cloudinary": "^1.27.1",
     "compression": "^1.7.4",

@@ -4,21 +4,18 @@
 	padding: 0;
 }
 
-::selection
-{
+::selection {
 	color: #ffffff;
 	background-color: #db1d1de5;
 }
-.iconsSocialNav
-{
+.iconsSocialNav {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
 
-.svgHomeTop
-{
+.svgHomeTop {
 	position: fixed;
 	z-index: 1000000000000000000000;
 	bottom: 0;
@@ -34,21 +31,17 @@
 	color: #f7a707;
 	text-decoration: none;
 }
-.iconsSocialNav a:hover
-{
+.iconsSocialNav a:hover {
 	background-color: #db1d1de5;
 	color: white;
 }
-.iconsSocialNav a:nth-child(even)
-{
+.iconsSocialNav a:nth-child(even) {
 	color: #f7a707;
 }
-.iconsSocialNav a:hover
-{
+.iconsSocialNav a:hover {
 	background-color: #f7a707;
 	color: white;
 }
-
 
 nav {
 	position: absolute;
@@ -82,8 +75,7 @@ nav {
 	justify-content: space-between;
 	padding: 10px 0px 10px 50px;
 }
-.navLinks
-{
+.navLinks {
 	margin-left: 6%;
 }
 
@@ -96,8 +88,11 @@ nav {
 	text-transform: capitalize;
 	padding: 18px;
 	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-
 
 .navLinks li a:hover {
 	background-color: rgb(255, 255, 255);
@@ -114,8 +109,7 @@ nav {
 	margin: 0;
 }
 
-.logo
-{
+.logo {
 	width: 22%;
 	height: 50%;
 	background-color: rgb(255, 255, 255);
@@ -135,13 +129,12 @@ nav {
 	width: 100%;
 	height: 50%;
 	transition: all 0.1s ease-in-out;
-	
 }
 
 .logo:hover {
 	box-shadow: rgba(247, 167, 7, 0.4) 5px 5px, rgba(247, 167, 7, 0.3) 10px 10px,
-	rgba(247, 167, 7, 0.2) 15px 15px, rgba(247, 167, 7, 0.1) 20px 20px,
-	rgba(247, 167, 7, 0.05) 25px 25px;
+		rgba(247, 167, 7, 0.2) 15px 15px, rgba(247, 167, 7, 0.1) 20px 20px,
+		rgba(247, 167, 7, 0.05) 25px 25px;
 }
 
 .icon {
@@ -196,4 +189,3 @@ nav {
 		color: #000;
 	}
 }
-

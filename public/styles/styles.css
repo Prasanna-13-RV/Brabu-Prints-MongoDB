@@ -161,7 +161,7 @@ body {
 }
 
 .heading1 {
-	height: 13vh;
+	height: 16vh;
 	width: 100%;
 	font-size: 40px;
 	display: flex;
@@ -265,6 +265,12 @@ body {
 	cursor: pointer;
 	text-decoration: none;
 	color: white;
+}
+.leafreadMore1:hover,
+.leafreadMore2:hover,
+.leafreadMore3:hover {
+	color: #f7a707;
+	background-color: white;
 }
 
 .paralaxH1 {
@@ -592,11 +598,9 @@ body {
 	text-decoration: none;
 }
 
-.contactSection {
-	margin-top: 2%;
-}
 .contactUsH1 {
 	text-align: center;
+	padding: 1%;
 }
 .contactDetail {
 	position: relative;
@@ -661,14 +665,12 @@ body {
 	align-items: center;
 	margin: 0% 3%;
 }
-.projectsMainDivFlex2 {
-	margin-bottom: 6%;
-}
 
 .projectsSubDiv {
 	position: relative;
 	width: 25%;
 	height: 15rem;
+	margin: 0.3%;
 	background-color: #1100ff;
 	overflow: hidden;
 	transition: all 0.8s ease-in-out;
@@ -844,22 +846,23 @@ body {
 .shortSectionH1 {
 	text-align: center;
 	font-size: 40px;
+	padding: 1%;
 }
 
 .imagesShortSection {
 	padding: 1% 8%;
-	margin: 3% 0%;
+	/* margin: 3% 0%; */
 	background-color: rgba(255, 251, 0, 0.534);
 	display: flex;
 	flex-direction: row;
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 
 .imageImgSection {
-  position: relative;
-  height: 5rem;
+	position: relative;
+	height: 5rem;
 }
 
 .postersSection {

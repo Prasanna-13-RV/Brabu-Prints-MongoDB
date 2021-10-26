@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/client.admin.css">
+    <link rel="stylesheet" href="../styles/nav.admin.css">
+    <title>Make Client</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navMain">
+            <div class="content">
+                <div class="logo">
+                    <a href="/client"><img class="logoBrabu" src="img/logo.png" alt="" /></a>
+                </div>
+                <ul class="navLinks">
+                    <li><a href="/client">Our Clients</a></li>
+                    <li><a href="/carousel">Add Carousel</a></li>
+                    <li><a href="/client/new">Add Client</a>
+                    <li><a href="/blog">Add Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="topdiv">
+            <h1 class="h1Client">All Clients</h1>
+        </div>
+        <div class="mainuldiv">
+            <% for( let client of clients) { %>
+                <div class="uldiv"><a class="clientname" href="/client/<%= client._id %>">
+                        <%= client.name %>
+                    </a></div>
+                <% } %>
+        </div>
+    </section>
+</body>
+
+</html>

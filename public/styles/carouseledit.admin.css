@@ -1,0 +1,46 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section
+{
+    width: 100%;
+    height: 100vh;
+}
+.honetag
+{
+    margin: 1%;
+    font-size: 40px;
+    text-align: center;
+}
+.imageOfCarousel
+{
+    position: relative;
+    width: 50%;
+    height: fit-content;
+}
+.mainDiv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.deleteButton
+{
+    position: relative;
+    padding: 25%;
+    margin: 25% 0%;
+    font-size: 20px;
+    background-color: #db1d1dd8;
+    color: white;
+    border: none;
+}
+.deleteButton:hover
+{
+    background-color: #db1d1d;
+    transform: translateY(-5%);
+    color: white;
+}

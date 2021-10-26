@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/teamshow.admin.css">
+    <link rel="stylesheet" href="../styles/nav.admin.css">
+    <title>Show Team</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navMain">
+            <div class="content">
+                <div class="logo">
+                    <a href="/client"><img class="logoBrabu" src="../img/logo.png" alt="" /></a>
+                </div>
+                <ul class="navLinks">
+                    <li><a href="/client">Our Clients</a></li>
+                    <li><a href="/carousel">Add Carousel</a></li>
+                    <li><a href="/client/new">Add Client</a>
+                    <li><a href="/blog">Add Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="sectionTeamShow">
+            <div class="divTeamShow">
+                <div>
+                    <h1 class="honeTag">
+                        <%= teams.name %>
+                    </h1>
+                    <p class="jobTeamShow">
+                        <%= teams.job %>
+                    </p>
+                </div>
+                <div>
+                    <img class="imageDivteamShow" src="<%= teams.imageTeam.url %>" alt="">
+                </div>
+                <div class="buttonAllTeam">
+                    <a class="buttonTeamEdit" href="/team/<%= teams._id %>/edit">Edit</a>
+                    <form action="/team/<%= teams._id %>?_method=DELETE" method="POST">
+                        <button class="buttonTeamDelete">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

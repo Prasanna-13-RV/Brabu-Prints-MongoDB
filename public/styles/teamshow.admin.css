@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  height: 80vh;
+  width: 100%;
+}
+.sectionTeamShow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* .honeTag
+{
+    text-align: center;
+} */
+.divTeamShow {
+  position: relative;
+  width: 100%;
+}
+.divTeamShow p {
+  word-wrap: break-word;
+  width: 35%;
+}
+
+.imageDivTeamShow {
+  width: 35%;
+}
+.buttonTeamEdit {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  margin: 3%;
+  width: 5%;
+  height: 1em;
+}

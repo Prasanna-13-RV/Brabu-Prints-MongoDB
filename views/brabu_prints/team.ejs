@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Team</title>
+    <link rel="stylesheet" href="../styles/team.admin.css">
+    <link rel="stylesheet" href="../styles/nav.admin.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navMain">
+            <div class="content">
+                <div class="logo">
+                    <a href="/client"><img class="logoBrabu" src="../img/logo.png" alt="" /></a>
+                </div>
+                <ul class="navLinks">
+                    <li><a href="/client">Our Clients</a></li>
+                    <li><a href="/carousel">Add Carousel</a></li>
+                    <li><a href="/client/new">Add Client</a>
+                    <li><a href="/blog">Add Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="mainDiv">
+            <form action="/team" method="POST" enctype="multipart/form-data">
+                <div class="inputAndLabel">
+                    <label class="label" for="name">Name : </label>
+                    <input type="text" id="name" name="teams[name]">
+                </div>
+                <div class="inputAndLabel">
+                    <label class="label" for="paragraph">Job : </label>
+                    <input type="text" name="teams[job]" id="job">
+                </div>
+                <div class="inputAndLabel">
+                    <label class="label" for="imageTeam">Team Image : </label>
+                    <input type="file" name="imageTeam" id="imageTeam">
+                </div>
+                <button type="submit">Add Team</button>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="sectionTeamejs">
+            <% teams.forEach(element=> { %>
+                <a class="aTagteam" href="/team/<%= element._id %>"><img class="imgTagTeam"
+                        src="<%= element.imageTeam.url %>" alt=""></a>
+                <% }) %>
+        </div>
+    </section>
+</body>
+
+</html>

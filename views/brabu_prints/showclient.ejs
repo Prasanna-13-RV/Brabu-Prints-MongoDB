@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/clientshow.admin.css">
+    <link rel="stylesheet" href="../styles/nav.admin.css">
+    <title>Show Client</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navMain">
+            <div class="content">
+                <div class="logo">
+                    <a href="/client"><img class="logoBrabu" src="../img/logo.png" alt="" /></a>
+                </div>
+                <ul class="navLinks">
+                    <li><a href="/client">Our Clients</a></li>
+                    <li><a href="/carousel">Add Carousel</a></li>
+                    <li><a href="/client/new">Add Client</a>
+                    <li><a href="/blog">Add Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h1 class="honeTag">
+            <%= clients.name %>
+        </h1>
+        <table>
+            <thead>
+                <th>Logo</th>
+                <th>Posters</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <% for( let img of clients.logo ) { %>
+                            <img class="imageinput" src="<%= img.url %>" alt="">
+                            <% } %>
+                    </td>
+                    <td>
+                        <% for( let img of clients.posters ) { %>
+                            <img class="imageinput" src="<%=img.url%>" alt="">
+                            <% } %>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="allButtons">
+            <a class="editButton" href="/client/<%= clients._id %>/edit ">Edit</a>
+            <form action="/client/<%= clients._id %>?_method=DELETE" method="POST">
+                <button class="deleteButton">Delete</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

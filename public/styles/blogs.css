@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.sectionBlogger {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.heading1 {
+	font-size: 40px;
+	text-align: center;
+	margin: 2%;
+}
+.bloggerMainDiv {
+	position: relative;
+}
+.bloggerImageimg {
+	width: 30%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.bloggerContent {
+	width: 50%;
+	word-wrap: break-word;
+	font-size: 30px;
+}
+.bloggerContent h2 {
+	position: relative;
+	width: 100%;
+	font-size: 40px;
+    left: 50%;
+}
+.javaScriptPTag {
+	position: relative;
+	left: 50%;
+}

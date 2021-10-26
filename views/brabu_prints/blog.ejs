@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Blog</title>
+    <link rel="stylesheet" href="../styles/blog.admin.css">
+    <link rel="stylesheet" href="../styles/nav.admin.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navMain">
+            <div class="content">
+                <div class="logo">
+                    <a href="/client"><img class="logoBrabu" src="../img/logo.png" alt="" /></a>
+                </div>
+                <ul class="navLinks">
+                    <li><a href="/client">Our Clients</a></li>
+                    <li><a href="/carousel">Add Carousel</a></li>
+                    <li><a href="/client/new">Add Client</a>
+                    <li><a href="/blog">Add Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="mainDiv">
+            <form action="/blog" method="POST" enctype="multipart/form-data">
+                <div class="inputAndLabel">
+                    <label class="label" for="name">Name : </label>
+                    <input type="text" id="name" name="blogs[name]">
+                </div>
+                <div class="inputAndLabel">
+                    <label class="label" for="paragraph">Paragraph : </label>
+                    <textarea class="textareaBlog" type="text" name="blogs[paragraph]" id="paragraph"></textarea>
+                </div>
+                <div class="inputAndLabel">
+                    <label class="label" for="imageBlog">Blog Image : </label>
+                    <input type="file" name="imageBlog" id="imageBlog">
+                </div>
+                <button type="submit">Add Blog</button>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="sectionBlogejs">
+            <% blogs.forEach(element=> { %>
+                <a class="aTagBlog" href="/blog/<%= element._id %>"><img class="imgTagBlog"
+                        src="<%= element.imageBlog.url %>" alt=""></a>
+                <% }) %>
+        </div>
+    </section>
+</body>
+
+</html>

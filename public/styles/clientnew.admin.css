@@ -1,0 +1,88 @@
+section
+{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainDiv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.label
+{
+    font-size: 26px;
+}
+input
+{
+    height: 1.8rem;
+    font-size: 18px;
+}
+.nexta
+{
+    padding: 1% 8%;
+    background-color: #db1d1d;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+    left: 40%;
+    width: 30%;
+    transform: translateX(-50%);
+    top: 10%;
+}
+.next2
+{
+    display: none;
+}
+.inputAndLabel
+{
+    width: 100%;
+    height: 5em;
+    margin: 2%;
+    transition: all 2s ease-in-out;
+}
+.inputAndLabel:nth-child(2)
+{
+    height: fit-content;
+}
+.inputAndLabel1 ,.inputAndLabel2 , .inputAndLabelButton
+{
+    transform: translateX(100%);
+    display: none;
+}
+.inputAndLabelFunction
+{
+    transform: translateX(0%);
+    display: block;
+}
+button
+{
+    position: relative;
+    left : 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    height: 2rem;
+    font-size: 20px;
+    background-color: #db1d1dd8;
+    color: white;
+    border: none;
+    
+}
+button:hover
+{
+    background-color: #db1d1d;
+    color: white;
+}
+.allClient
+{
+    font-size: 20px;
+    color: #db1d1d;
+    text-decoration: none;
+    margin: 2%;
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+section
+{
+    height: 80vh;
+    width: 100%;
+}
+.honeTag
+{
+    text-align: center;
+    font-size: 40px;
+    padding: 2%;
+}
+.imageinput
+{
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+table
+{
+    height: fit-content;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+th
+{
+    width: 50%;
+    height: 2em;
+    font-size: 30px;
+    background-color: #db1d1d;
+    color: white;
+}
+.allButtons
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 10%;
+}
+.editButton
+{
+    position: relative;
+    font-size: 22px;
+    text-decoration: none;
+    background-color: #db1d1d;
+    color: white;
+    width: 4em;
+    height: 2em;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.deleteButton
+{
+    position: relative;
+    width: 5em;
+    height: 2em;
+    font-size: 22px;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #db1d1d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.allClient
+{
+    position: relative;
+    font-size: 22px;
+    text-decoration: none;
+    background-color: #db1d1d;
+    color: white;
+    width: 5em;
+    height: 2em;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

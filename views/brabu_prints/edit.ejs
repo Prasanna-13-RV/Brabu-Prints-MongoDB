@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../styles/clientedit.admin.css" />
+		<link rel="stylesheet" href="../../styles/nav.admin.css" />
+		<title>Edit Client</title>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navMain">
+				<div class="content">
+					<div class="logo">
+						<a href="/client"
+							><img class="logoBrabu" src="../../img/logo.png" alt=""
+						/></a>
+					</div>
+					<ul class="navLinks">
+						<li><a href="/client">Our Clients</a></li>
+						<li><a href="/carousel">Add Carousel</a></li>
+						<li><a href="/client/new">Add Client</a></li>
+						<li><a href="/blog">Add Blog</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section>
+			<h1 class="honeEdit">Edit Client</h1>
+			<div class="mainDiv">
+				<form
+					action="/client/<%=clients._id%>?_method=PUT"
+					method="POST"
+					enctype="multipart/form-data"
+				>
+					<div class="inputAndLabel">
+						<label class="label" for="name">Name</label>
+						<input
+							type="text"
+							id="name"
+							name="clients[name]"
+							value="<%= clients.name %>"
+						/>
+					</div>
+					<div class="inputAndLabel">
+						<label class="label" for="posters">Poster image</label>
+						<input type="file" name="posters" id="posters" multiple />
+					</div>
+					<div class="inputAndLabel">
+						<label class="label" for="logo">Client image</label>
+						<input type="file" name="logo" id="logo" multiple />
+					</div>
+					<button>Update client</button>
+				</form>
+				<a class="allClient" href="/client/<%= clients._id %>"
+					>Back to Clients</a
+				>
+			</div>
+		</section>
+	</body>
+</html>

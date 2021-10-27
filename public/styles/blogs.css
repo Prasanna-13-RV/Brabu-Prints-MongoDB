@@ -3,37 +3,44 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-.sectionBlogger {
+
+section {
+	/* height: 100vh; */
 	width: 100%;
-	height: 100vh;
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center;
+	align-items: center; */
+	flex-wrap: wrap;
 }
-.heading1 {
-	font-size: 40px;
+
+.blogsMainDiv {
+	width: 40%;
+	height: fit-content;
+	margin: 3%;
+	background-color: #db1d1de5;
+	color: white;
+	padding: 3%;
+	border-radius: 10px;
+}
+
+h1 {
 	text-align: center;
+	font-size: 40px;
 	margin: 2%;
 }
-.bloggerMainDiv {
-	position: relative;
-}
 .bloggerImageimg {
-	width: 30%;
-	position: relative;
+	width: 65%;
+	margin: 3%;
+	transition: all 0.1s ease-in-out;
 	left: 50%;
 	transform: translateX(-50%);
-}
-.bloggerContent {
-	width: 50%;
-	word-wrap: break-word;
-	font-size: 30px;
-}
-.bloggerContent h2 {
 	position: relative;
-	width: 100%;
-	font-size: 40px;
-    left: 50%;
+}
+.bloggerImageimg:hover {
+	transform: scale(1.1, 1.1) translateX(-50%);
 }
 .javaScriptPTag {
-	position: relative;
-	left: 50%;
+	font-size: 1.3rem;
+	text-align: justify;
 }

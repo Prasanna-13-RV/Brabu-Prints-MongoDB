@@ -51,27 +51,20 @@
     </header>
 
 
-    <section class="sectionBlogger">
-        <div class="bloggerMainDiv">
-            <h1 class="heading1">Bl<span>ogg</span>er</h1>
+    <section>
+        <h1 class="heading1">Bl<span>ogg</span>er</h1>
+        <div class="blogsMainDiv">
             <% blogs.forEach(element=> { %>
-                <div class="bloggerDiv">
-                    <div class="bloggerImage">
-                        <img class="bloggerImageimg" src="<%= element.imageBlog.url %>" alt="">
-                    </div>
-                    <div class="bloggerContent">
-                        <h2>
-                            <%= element.name %>
-                        </h2>
-                        <p class="javaScriptPTag">
-                            <%= element.paragraph %>
-                        </p>
-                    </div>
-                    <% }) %>
-                </div>
+                <img class="bloggerImageimg" src="<%= element.imageBlog.url %>" alt="">
+                <h2>
+                    <%= element.name %>
+                </h2>
+                <p class="javaScriptPTag">
+                    <%= element.paragraph %>
+                </p>
+                <% }) %>
+        </div>
     </section>
-
-
 
 
 
